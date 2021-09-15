@@ -358,4 +358,11 @@
         .about-h2 {
             font-size: 2rem;
         }
+        .by {
+            position: relative;
+            top: 25%;
+        }
+        footer {
+            height: 40vh;
+        }
     }
