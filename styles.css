@@ -31,7 +31,7 @@
         font-family: 'Poppins', sans-serif;
     }
     
-    input {
+    input[id="check"] {
         visibility: hidden;
     }
     
@@ -42,11 +42,24 @@
     }
     
     section {
-        height: 100%;
+        height: 80vh;
         width: 100%;
         /* Stick to the top */
         position: sticky;
         top: 0;
+    }
+    /* -----------------------dark-mode------------------------------ */
+    
+    input[name="dark-switch"] {
+        position: fixed !important;
+        z-index: 1;
+        top: 100px;
+        right: 20px;
+    }
+    
+    input[name="dark-switch"]:checked~* {
+        /* transition: all 3s ease; */
+        filter: invert(1);
     }
     /* -----------------------class------------------------------ */
     
@@ -55,10 +68,13 @@
         line-height: 80px;
         margin: 1rem 2.5rem;
         font-family: 'Allison', cursive;
+        font-weight: 900;
     }
     
     .nav-home {
         background-color: #a6ffb95e;
+        filter: inherit;
+        isolation: isolate;
     }
     
     .checkbtn {
@@ -74,6 +90,8 @@
     .container {
         height: 100%;
         overflow: hidden;
+        isolation: isolate;
+        mix-blend-mode: difference;
     }
     
     .sticky-section {
@@ -102,11 +120,14 @@
     .home-img-div {
         height: 45%;
         width: auto;
+        filter: inherit;
     }
     
     .home-img {
         height: 100%;
         width: auto;
+        isolation: isolate;
+        display: block;
     }
     
     .custom-shape-divider-bottom-1631607705 {
@@ -220,6 +241,11 @@
         position: relative;
         top: 40%;
     }
+    
+    .darkmode-layer,
+    .darkmode-toggle {
+        z-index: 500;
+    }
     /* -----------------------ID------------------------------ */
     
     #home {
@@ -266,7 +292,7 @@
             position: fixed;
             width: 100%;
             height: 100vh;
-            background-color: #E1FFFA;
+            background-color: #e1fffabe;
             text-align: center;
             left: -100%;
             transition: 0.5s;
@@ -303,6 +329,29 @@
     a:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+    
+    .dj:hover {
+        animation: logo 1s ease-in-out infinite;
+    }
+    /* -----------------------key-frames------------------------------ */
+    
+    @keyframes logo {
+        0% {
+            text-shadow: 2px 2px 5px #15ff00, -2px -2px 5px #ff5100;
+        }
+        25% {
+            text-shadow: 3px 3px 5px #d400ff, -3px -3px 5px #e5ff00;
+        }
+        50% {
+            text-shadow: 4px 4px 5px #ff5100, -4px -4px 5px #7300f7;
+        }
+        75% {
+            text-shadow: 3px 3px 5px #dff800, -3px -3px 5px #15ff00;
+        }
+        100% {
+            text-shadow: 4px 4px 5px #7300f7 4px -4px 5px #d400ff;
+        }
     }
     /* -----------------------media-query adjustment------------------------------ */
     
