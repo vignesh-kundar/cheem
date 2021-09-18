@@ -2,6 +2,8 @@ let icon = document.getElementById("icon-d");
 
 let check = document.getElementById("check");
 
+
+
 let atag = document.getElementById("atag");
 
 icon.onclick = function() {
@@ -16,7 +18,10 @@ icon.onclick = function() {
 
 
 check.onclick = function() {
-    document.getElementById("container").classList.toggle("blur-class");
+    if (window.innerWidth < 501) {
+        document.getElementById("container").classList.toggle("blur-class");
+    }
+
     document.getElementById("check-btn-rotate").classList.toggle("rotate-check");
 }
 
