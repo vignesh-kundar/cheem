@@ -2,6 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background 1s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+
+/* -----------------------test------------------------------ */
+
+
+/* -----------------------scroll - bar------------------------------ */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--main-text);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: black;
 }
 
  :root {
@@ -146,7 +186,7 @@ section {
 
 .sticky-section {
     /* dosent work */
-    position: sticky;
+    position: sticky !important;
     top: 0;
     overflow: hidden;
 }
@@ -196,7 +236,7 @@ section {
     position: relative;
     display: block;
     width: calc(105% + 1.3px);
-    height: 55px;
+    height: 56px;
 }
 
 .custom-shape-divider-bottom-1631607705 .shape-fill {
@@ -368,7 +408,8 @@ section {
 
 /* -----------------------hover------------------------------ */
 
-a:after {
+a:after,
+nav:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -381,7 +422,8 @@ a:after {
     transition: transform 0.25s ease-out
 }
 
-a:hover:after {
+a:hover:after,
+nav:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
