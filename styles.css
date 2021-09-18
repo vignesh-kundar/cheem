@@ -12,9 +12,6 @@ html {
 }
 
 
-/* -----------------------test------------------------------ */
-
-
 /* -----------------------scroll - bar------------------------------ */
 
 ::-webkit-scrollbar {
@@ -51,9 +48,9 @@ html {
     --hover: grey;
     --icon-bk: #FFE194;
     --main-text: #FFCC00;
-    --tags: #7779f5;
-    --heads: #FFCC00;
-    --head-shadow: rgba(0, 0, 0, 0.349);
+    --tags: #31bafa;
+    --heads: #6b137c;
+    --head-shadow: rgb(255, 187, 0);
     --nav-slide: #fdffe1be;
 }
 
@@ -173,7 +170,7 @@ section {
 }
 
 .rotate-check {
-    transform: rotate(90deg);
+    transform: rotate(360deg);
     transition: all 1s;
 }
 
@@ -249,7 +246,7 @@ section {
     color: var(--heads);
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    text-shadow: 0 2px 5px var(--head-shadow);
+    text-shadow: 0 0px 10px var(--head-shadow);
 }
 
 .color-img {
