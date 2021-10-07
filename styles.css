@@ -215,6 +215,8 @@ section {
 .home-img {
     height: 100%;
     width: auto;
+    background-color:  #FFCC00;
+    border-radius: 50%;
     isolation: isolate;
     display: block;
 }
@@ -250,7 +252,7 @@ section {
 }
 
 .color-img {
-    border-radius: 10px;
+    border-radius:50%;
     display: block;
     padding: 3px;
     margin-top: 30px;
