@@ -1,0 +1,19 @@
+.home-img-div,.home-para-div, .color-img,.color-para, .breed-para, .breed-img , .about-para
+{
+    transition: 1s ease-in-out;
+    opacity: 1;
+}
+
+.anim-right
+{
+    margin-right: -100%;
+    opacity: 0;
+}
+
+.anim-left
+{
+    margin-left: -100%;
+    opacity: 0;
+}
+
+
