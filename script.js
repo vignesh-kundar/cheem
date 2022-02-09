@@ -37,11 +37,9 @@ $(document).ready(function () {
     }
 
 
-
     // Show Home Div on page load
     $(".home-img-div").removeClass("anim-left");
     $(".home-para-div").removeClass("anim-right");
-
     
 
     $(document).on('scroll',function(){
@@ -93,10 +91,6 @@ $(document).ready(function () {
         }
 
 
-        
-     
-
-
         //About animation
         if(scrollPoint>=aboutPoint-350)
         {
@@ -108,7 +102,6 @@ $(document).ready(function () {
             $(".about-h2").css("opacity","0");
             $(".about-para").addClass("anim-right");
         }
-
 
     });
     
