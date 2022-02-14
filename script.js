@@ -37,7 +37,7 @@ $(document).ready(function () {
     }
 
 
-    // Show Home Div on page load
+    // Show Home Div on page load .
     $(".home-img-div").removeClass("anim-left");
     $(".home-para-div").removeClass("anim-right");
     
@@ -78,7 +78,7 @@ $(document).ready(function () {
            }
 
 
-        //Color animation
+        //Color animation . 
         if(scrollPoint>=colorPoint-350 && scrollPoint <=aboutPoint-450)
         {
             $(".color-img").removeClass("anim-left");
@@ -105,5 +105,4 @@ $(document).ready(function () {
 
     });
     
-
 });
