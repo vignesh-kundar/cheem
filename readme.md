@@ -1,4 +1,4 @@
-# website made using pure html , css and js 
+# website made using pure html, css and js 
 
 
 
