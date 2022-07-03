@@ -4,4 +4,4 @@
 
 #### Freenom Hosting 
 
-* [touch me onichaan](http://cheem.ml)
+* [alternative site](http://cheem.ml)
